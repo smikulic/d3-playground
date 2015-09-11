@@ -1,0 +1,16 @@
+{
+  "name": "myTopicsChallenge",
+  "description": "My toopics challenge - word cloud",
+  "authors": [
+    "Sinisa Mikulic"
+  ],
+  "homepage": "https://git@github.com:smikulic/myTopicsChallenge.git",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:smikulic/myTopicsChallenge.git"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.8.2",
+    "gulp": "^3.8.10"
+  }
+}
