@@ -1,0 +1,63 @@
+/* General styles */
+body {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+    border-bottom: 1px solid lightblue;
+    padding: 0 15px 40px 15px;
+}
+
+/* Component styles */
+.topic-info {
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    right: 0;
+    width: 320px;
+    padding: 15px;
+    font-style: italic;
+    color: lightgray;
+    border-left: 1px solid lightblue;
+    -webkit-transition: width 1s;
+    -moz-transition: width 1s;
+    -o-transition: width 1s;
+    transition: width 1s;
+    -moz-box-shadow:    -10px 0px 20px -10px lightgray;
+  	-webkit-box-shadow: -10px 0px 20px -10px lightgray;
+  	box-shadow:         -10px 0px 20px -10px lightgray;
+    cursor: pointer;
+}
+.topic-info:hover {
+	width: 360px;
+	-webkit-transition: width 1s;
+    -moz-transition: width 1s;
+    -o-transition: width 1s;
+    transition: width 1s;
+	-moz-box-shadow:    -15px 0px 20px -10px lightgray;
+  	-webkit-box-shadow: -15px 0px 20px -10px lightgray;
+  	box-shadow:         -15px 0px 20px -10px lightgray;
+}
+.topicInfo-label .value {
+	color: black;
+}
+.topicInfo-mentions {
+	margin: 3px 0;
+}
+.topicInfo-label .value,
+.topicInfo-mentions .value {
+	display: block;
+	font-size: 22px;
+}
+.topicInfo-mentions--total {
+	margin-bottom: 15px;
+}
+.topicInfo-mentions--total .value {
+	color: black;
+}
+.topicInfo-mentions--positive .value {
+	color: green;
+}
+.topicInfo-mentions--negative .value {
+	color: red;
+}

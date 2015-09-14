@@ -12,6 +12,7 @@
   "devDependencies": {
     "browser-sync": "^2.8.2",
     "gulp": "^3.8.10",
+    "gulp-concat": "^2.6.0",
     "gulp-json-srv": "0.0.7"
   }
 }
