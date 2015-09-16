@@ -1,5 +1,5 @@
 # myTopicsChallenge
-My toopics challenge - word cloud
+My Topics Challenge - word cloud
 
 1. Clone the project
 2. Run command "npm install"
