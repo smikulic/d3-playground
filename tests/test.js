@@ -12,8 +12,8 @@ describe('App', function () {
             expect(response.statusCode).to.be.equal(200);
  
             var $ = cheerio.load(body);
-            var headerText = $('h1').html();
-            expect(headerText).to.be.equal('My Topics Challenge');
+            var app = $('div#app').html();
+            expect(app).to.be.equal('');
             done();
         });
     });

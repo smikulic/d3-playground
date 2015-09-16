@@ -1,4 +1,7 @@
-function wordCloudComponent(topics) {
+/*
+ * Word cloud
+************************************ */
+function wordCloud(topics) {
 	var topicsLength = topics.length;
 	var wordsList = [];
 	var wordsVolume = [];
@@ -46,13 +49,13 @@ function wordCloudComponent(topics) {
 		for (; i < topicsLength; i++) {
 			var topicObj = topics[i];
 			if (topic.text === topicObj.label) {
-				topicInfoComponent(topicObj);
+				topicInfoComponent(topicObj)
 			}	
 		}
 	}
 
 	function _wordColorCategory(topic, index) {
-    	var topicColor = 'lightgray';
+    	var topicColor = '#D7D7DC';
 
     	if(topic.text === topics[index].label) {
     		var topicSentimentScore = topics[index].sentimentScore;
@@ -60,7 +63,7 @@ function wordCloudComponent(topics) {
     		if (topicSentimentScore > 60) {
 				topicColor = 'green';
 			} else if (topicSentimentScore < 40) {
-				topicColor = 'red';
+				topicColor = '#FF1100';
 			}
     	}
 
@@ -68,7 +71,7 @@ function wordCloudComponent(topics) {
   	}
 
   	function _draw(words) {
-	    d3.select("body").append("svg")
+	    d3.select('body').append("svg")
 	        .attr("width", layout.size()[0])
 	        .attr("height", layout.size()[1])
 	      .append("g")

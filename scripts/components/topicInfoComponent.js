@@ -1,3 +1,4 @@
+// TopicInfo Component
 function topicInfoComponent(topic) {
 	var content;
 	var labelNode = '';
@@ -13,7 +14,7 @@ function topicInfoComponent(topic) {
 
 	// Actions
 	topicInfo.onclick = function() {
-		clear(this);
+		clearComponent(this);
 	};
 
 

@@ -1,19 +1,35 @@
 /*
  * Build app
 ************************************ */
-var topicInfo = document.getElementById('topicInfo');
+var app = document.getElementById('app');
 
 function init() {
-	loadJSON(function(response) {
-  		// Parse JSON string into object
-    	var topics = JSON.parse(response);
-
-    	wordCloudComponent(topics);
- 	});
+	route('welcome');
 }
 
-function clear(element) {
-	element.innerHTML = '';
+function clearComponent(component) {
+	component.innerHTML = '';
+}
+
+function addComponent(component) {
+	app.innerHTML += component;
+}
+
+function route(page) {
+	clearComponent(app);
+
+	switch(page) {
+		case 'welcome':
+			addComponent(welcomeComponent());
+			break;
+		case 'word-cloud':
+			addComponent(headerComponent());
+			addComponent(wordsComponent());
+			break;
+		default:
+			addComponent(welcomeComponent());
+			break;
+	}
 }
 
 
