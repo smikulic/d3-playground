@@ -6,7 +6,7 @@ var wordsComponent = function() {
   		// Parse JSON string into object
     	var topics = JSON.parse(response);
 
-    	content = wordCloud(topics);
+    	wordCloud(topics);
  	});
 
 	// DOM content build

@@ -3,7 +3,7 @@ var request = require('request'),
     expect = require('chai').expect,
     baseUrl = 'http://localhost:3000'
     topicsApi = 'http://localhost:25000/api/topics';
- 
+
 describe('App', function () {
     it('should load properly', function (done) {
         request(baseUrl, function (error, response, body) {
