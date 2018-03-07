@@ -1,5 +1,4 @@
-# myTopicsChallenge
-My Topics Challenge - word cloud
+# d3 playground - word cloud
 
 1. Clone the project
 2. Run command "npm install"
